@@ -20,6 +20,15 @@ import Customer from './Customer'
 import Activeboy from './Activeboy'
 import Additems from './Additems';
 import back1 from './UI/back1.PNG'
+import { GrLogin } from "react-icons/gr";
+import { GoLocation } from "react-icons/go";
+import { FiLogOut } from "react-icons/fi";
+import { FaRegRegistered } from 'react-icons/fa'
+import { FaCartArrowDown } from 'react-icons/fa'
+import { FaRegUser } from 'react-icons/fa'
+import logo2 from './UI/logo2.png'
+import Coupons from './Coupons'
+import Updatecoupon from './Updatecoupon'
 
 export default class Admin extends Component{
 
@@ -28,7 +37,8 @@ export default class Admin extends Component{
         localStorage.removeItem('usertoken')
         // alert("Logout!!")
         toast("Logout!!", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
-        this.props.history.push("/")   
+        this.props.history.push("/") 
+        window.location.reload(1000)  
     } 
 
     render(){
@@ -56,6 +66,55 @@ export default class Admin extends Component{
                     <Route path='/' />
                 </Switch> */}
 
+
+                <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark" style={{ backgroundColor:'white'}}>
+                    <Navbar.Brand href="#home"></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ borderColor:'grey'}}/>
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                        <a class="navbar-brand" href="#"><img className="logo" src={logo2} alt='logo' style={{width:'150px', height:'100px' }}/></a>
+                        </Nav>
+                        <div>
+                        <div>
+                        <Nav>
+                        <ul className="navbar-nav mr-auto" style={{marginLeft:'68%'}}>
+                            <li ><Link className="nav-link text-dark "><GoLocation/></Link></li>
+                            <li ><Link to="/Account1" className="nav-link text-dark"><FaRegUser /></Link></li>
+                            <li ><Link to="/Cart" className="nav-link text-dark"><FaCartArrowDown /></Link></li>
+                            <li ><Link to="/Signin" className="nav-link text-dark "><GrLogin /></Link></li>
+                            <li ><Link to="/" onClick={this.logOut.bind(this)} className="nav-link text-dark "><FiLogOut /></Link></li>
+                        </ul>
+                        </Nav>
+                        </div>
+                        <div>
+                        <Nav>
+                        <ul className="navbar-nav mr-auto" >
+                            <li><Link to="/" className="nav-link text-dark "><b style={{color:'#779A25'}}>Home</b></Link></li>
+                            <li ><Link to="/Tab2" className="nav-link text-dark"><b style={{color:'black'}}>Shop by</b></Link></li>
+                            <li><Link to="/Orders" className="nav-link text-dark"><b style={{color:'black'}}>My Orders</b></Link></li>
+                            <li><Link to="/" className="nav-link text-dark"><b style={{color:'black'}}>Products</b></Link></li>
+                            <li><Link to="/" className="nav-link text-dark"><b style={{color:'black'}}>About Us</b></Link></li>
+                            <li><Link to={'/'} className="nav-link text-dark"><b style={{color:'black'}}>Contact Us</b></Link></li>
+                        </ul>
+                        </Nav>
+
+                        {/* <Modal
+                        size="sm"
+                        show={lgShow}
+                        onHide={() => setShow(false)}
+                        dialogClassName="modal-90w"
+                        aria-labelledby="example-custom-modal-styling-title"
+                        >
+                        <Modal.Body>
+                            <Maps />
+                        </Modal.Body>
+                        </Modal> */}
+
+                        </div>
+                        </div>
+                    </Navbar.Collapse>
+                </Navbar>
+
                 
                 <hr style={{ height:'5px',borderColor:'black' }}/>
 
@@ -73,6 +132,8 @@ export default class Admin extends Component{
                         <Tab tabFor="vertical-tab-five" style={{ marginTop:'20px', textAlign:'left' }}><b>Active chefs</b></Tab>
                         <Tab tabFor="vertical-tab-six" style={{ marginTop:'20px', textAlign:'left' }}><b>Active Delivery Partner</b></Tab>
                         <Tab tabFor="vertical-tab-seven" style={{ marginTop:'20px', textAlign:'left' }}><b>Add items</b></Tab>
+                        <Tab tabFor="vertical-tab-eight" style={{ marginTop:'20px', textAlign:'left' }}><b>Discount Coupons</b></Tab>
+                        <Tab tabFor="vertical-tab-nine" style={{ marginTop:'20px', textAlign:'left' }}><b>Add Coupons</b></Tab>
                     </TabList>
                     
 
@@ -109,6 +170,14 @@ export default class Admin extends Component{
 
                     <TabPanel tabId="vertical-tab-seven" style={{marginTop:'60px', margin:'5% 10%'}}>
                         <Additems /> 
+                    </TabPanel>
+
+                    <TabPanel tabId="vertical-tab-eight" style={{marginTop:'60px', margin:'5% 10%'}}>
+                        <Updatecoupon /> 
+                    </TabPanel>
+
+                    <TabPanel tabId="vertical-tab-nine" style={{marginTop:'60px', margin:'5% 10%'}}>
+                        <Coupons /> 
                     </TabPanel>
 
                 </Tabs>

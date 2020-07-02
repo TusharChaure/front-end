@@ -113,9 +113,9 @@ function Footer() {
             <h4 style={{color:'#FFF'}}>Quick Links</h4>
             <ul className="list-unstyled">
             <li><a href="./" style={{color:'#FFF'}}>Home</a></li>
-            <li><a href="./Tab2" style={{color:'#FFF'}}>Shop By</a></li>
+            <li><a href="./" style={{color:'#FFF'}}>Shop By</a></li>
             <li><a href="./" style={{color:'#FFF'}}>About Us</a></li>
-            <li><a href="./Orders" style={{color:'#FFF'}}>My Orders</a></li>
+            <li><a href="./" style={{color:'#FFF'}}>My Orders</a></li>
             <li><a href="./" style={{color:'#FFF'}}>Contact Us</a></li>
             <li><a href="./" style={{color:'#FFF'}}>FAQ</a></li>
             </ul>

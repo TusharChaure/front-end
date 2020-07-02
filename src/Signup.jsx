@@ -151,7 +151,7 @@ export default class Signup extends Component {
     
     <div className="d-flex justify-content-center links">
     
-    {/* <a href="/Signin"><p style={{float:'right', color:'#9C9C9B'}}>Login here</p></a> */}
+    {/* <a href="/Signin"><p style={{float:'right', color:'#9C9C9B'}}>Login here</p></a>  */}
     
     </div>
 
@@ -161,7 +161,7 @@ export default class Signup extends Component {
     
     </div>
 
-    <div className="banner-sec" style={{width:'55%'}}><img src={log1} alt='login image' style={{ width:'100%', height:'85%' }}/></div>
+    <div className="banner-sec" style={{width:'55%'}}><img src={log1} alt='login image' style={{ width:'100%', height:'100%' }}/></div>
 
     </div>
 

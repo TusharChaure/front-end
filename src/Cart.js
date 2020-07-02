@@ -22,7 +22,7 @@ class Cart extends Component {
         }
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
-        // this.handleClick = this.handleClick.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
      
      onChange(e){
@@ -37,6 +37,7 @@ class Cart extends Component {
     //     //     toast("Try another promo code!!", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
    
             console.log(this.state.code)
+            localStorage.setItem("promo", this.state.code)
             for( let i=0; i<this.state.coupon.length; i++){
                 if(this.state.coupon[i].couponcode == this.state.code){
                     localStorage.amount = localStorage.amount - localStorage.amount*(this.state.coupon[i].off/100)  
@@ -44,7 +45,7 @@ class Cart extends Component {
                     toast("Promo code applied", {position: toast.POSITION.TOP_CENTER, autoClose: 1000})
                 }   
             }
-            // this.props.history.push('./Cart')
+            this.props.history.push('./')
             window.location.reload(1000);
      }
 
@@ -54,14 +55,14 @@ class Cart extends Component {
         localStorage.removeItem("category")
         localStorage.removeItem("total")
         localStorage.removeItem("amount")
-        // this.props.history.push('./Cart')
+        this.props.history.push('./')
         window.location.reload(1000);
       }
 
       componentDidMount() {
         console.log(localStorage.amount);
-        // axios.post('http://localhost:5000/users/getcoupons',
-        axios.post('users/getcoupons',
+        axios.post('http://165.22.208.232/users/getcoupons',
+        // axios.post('users/getcoupons',
         {
             "price": localStorage.amount,
          },
@@ -100,8 +101,8 @@ class Cart extends Component {
 
      handle() {
         console.log("clicked");
-        // axios.post('http://localhost:5000/order/add',
-        axios.post('order/add',
+        axios.post('http://165.22.208.232/order/add',
+        // axios.post('order/add',
          {
             "catogary": localStorage.category,
             "subcatogary": localStorage.subcategory,
@@ -109,7 +110,7 @@ class Cart extends Component {
             "paymentType": "cash",
             "totalCost": localStorage.total,
             "discountprice": localStorage.amount,
-            "couponcode": this.state.code    
+            "couponcode": localStorage.promo    
          },
          {
              headers: {

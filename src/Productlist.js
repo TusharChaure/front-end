@@ -15,8 +15,8 @@ class Productlist extends Component {
 
     componentDidMount() {   
         
-        // axios.get('http://localhost:5000/users/order', {
-        axios.get('users/order', {
+        axios.get('http://165.22.208.232/users/order', {
+        // axios.get('users/order', {
             headers: {
               'auth-token': localStorage.usertoken
             }})

@@ -30,8 +30,8 @@ class Financials extends Component {
     e.preventDefault()
    
     console.log("clicked");
-        //  axios.put('http://localhost:5000/homechef/financial/add/',
-         axios.put('homechef/financial/add/',
+        axios.put('http://165.22.208.232/homechef/financial/add/',
+        //  axios.put('homechef/financial/add/',
          {
             "array": "expense",
             "month": this.state.month,

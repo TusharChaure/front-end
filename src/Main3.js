@@ -34,7 +34,7 @@ import { FaRegRegistered } from 'react-icons/fa'
 import Admin from './Admin'
 import Main1 from './Main1'
 
-function Main3 (){
+function Main3 (props) {
 
     const [lgShow, setShow] = useState(false)
     
@@ -42,9 +42,9 @@ function Main3 (){
         toast.configure()
         e.preventDefault()
         localStorage.removeItem('usertoken')
-        // alert("Logout!!")
         toast("Logout!!", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
-
+        // this.props.history.push(`/`)
+        window.location.reload(1000);
     }
         
         return (  
@@ -63,13 +63,13 @@ function Main3 (){
                         <div>
                         <div>
                         <Nav>
-                        <ul className="navbar-nav mr-auto" style={{marginLeft:'62%'}}>
+                        <ul className="navbar-nav mr-auto" style={{marginLeft:'68%'}}>
                             <li ><Link onClick={() => setShow(true)} className="nav-link text-dark "><GoLocation/></Link></li>
                             <li ><Link to="/Account1" className="nav-link text-dark"><FaRegUser /></Link></li>
                             <li ><Link to="/Cart" className="nav-link text-dark"><FaCartArrowDown /></Link></li>
                             <li ><Link to="/Signin" className="nav-link text-dark "><GrLogin /></Link></li>
                             <li ><Link to="/Signup" className="nav-link text-dark "><FaRegRegistered /></Link></li>
-                            <li ><Link to="/" onClick={logOut.bind(this)} className="nav-link text-dark "><FiLogOut /></Link></li>
+                            {/* <li ><Link to="/" onClick={logOut.bind(this)} className="nav-link text-dark "><FiLogOut /></Link></li> */}
                         </ul>
                         </Nav>
                         </div>
@@ -109,10 +109,8 @@ function Main3 (){
                     <Route path='/Signin' component={Signin} />
                     <Route path='/Signup' component={Signup} />
                     <Route exact path='/' component={Main4}/>
-                    <Route path='/Tab2' component={Tab2} />
+                    <Route exact path='/Tab2' component={Tab2} />
                     <Route path='/Orders' component={Orders}/>
-                    <Route path='/Admin' component={Admin}/>
-                    <Route path='/Main1' component={Main1}/>
                     <Route path='/' />
                     <Route path='/' />
                     <Route path='/Cart' component={Cart} />

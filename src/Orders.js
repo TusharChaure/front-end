@@ -19,8 +19,8 @@ class Orders extends Component {
     componentDidMount() {   
         
         toast.configure()
-        // axios.get('http://localhost:5000/users/orders', {
-        axios.get('users/orders', {
+        axios.get('http://165.22.208.232/users/orders', {
+        // axios.get('users/orders', {
             headers: {
               'auth-token': localStorage.usertoken
             }})

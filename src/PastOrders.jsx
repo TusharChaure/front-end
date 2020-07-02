@@ -23,8 +23,8 @@ constructor(props) {
  componentDidMount() {   
         
   // toast.configure()
-  // axios.get('http://localhost:5000/homechef/orders/past', {
-    axios.get('homechef/orders/past', {
+    axios.get('http://165.22.208.232/homechef/orders/past', {
+    // axios.get('homechef/orders/past', {
       headers: {
         'auth-token': localStorage.usertoken
       }})
@@ -45,7 +45,7 @@ constructor(props) {
 
  renderTableData() {
   return this.state.orders.map((order, index) => {
-    const { _id, catogary, subcatogary, paymentType, totalCost, serviceboyid } = order //destructuring
+    const { _id, catogary, subcatogary, paymentType, totalCost,discountprice, serviceboyid } = order //destructuring
     return (
       <tr key={_id}>
       <td>{_id}</td>
@@ -53,6 +53,7 @@ constructor(props) {
       <td>{subcatogary}</td>
       <td>{paymentType}</td>
       <td>{totalCost}</td>
+      <td>{discountprice}</td>
       <td>{serviceboyid}</td>
       </tr>
        )
@@ -69,6 +70,7 @@ constructor(props) {
             <th scope="col">Subcategory</th>
             <th scope="col">Payment Type</th>
             <th scope="col">Total-Amount</th>
+            <th scope="col">Discount-Amount</th>
             <th scope="col">Service Boy Id</th>
           </tr>
         </thead>

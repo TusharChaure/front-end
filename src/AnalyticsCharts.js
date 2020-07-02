@@ -35,16 +35,16 @@ constructor(props){
 }
 componentDidMount() {
     
-    // axios.get('http://localhost:5000/homechef/profile', {
-    axios.get('homechef/profile', {
+    axios.get('http://165.22.208.232/homechef/profile', {
+    // axios.get('homechef/profile', {
       headers: {
         'auth-token': localStorage.usertoken
       }})
    .then(res => {
        console.log(res)
        if(res.data.status==true){
-        // axios.get('http://localhost:5000/homechef/analysis', {
-        axios.get('homechef/analysis', {
+        axios.get('http://165.22.208.232/homechef/analysis', {
+        // axios.get('homechef/analysis', {
             headers: {
                 'auth-token': localStorage.usertoken
             }}).then(res=>{

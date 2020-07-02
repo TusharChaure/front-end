@@ -63,15 +63,15 @@ export default class Signin extends Component {
           if(res) {
             if(localStorage.status=="homechef"){
             this.props.history.push("/Main1") 
-            // window.location.reload(1000);
+            window.location.reload(1000);
             }
             else if(localStorage.status=="customer"){
-              // this.props.history.push("/")
+              this.props.history.push("/")
               // window.location.reload(1000);
             }
             else if(localStorage.status=="admin"){
-              this.props.history.push("/Admin")
-            // window.location.reload(1000);
+            this.props.history.push("/Admin")
+            window.location.reload(1000);
             }
         }})
 
@@ -91,7 +91,7 @@ export default class Signin extends Component {
     
     <img src={logo2} alt='login image' style={{ width:'50%', height:'20%' }}/> 
     
-    <Form onSubmit={this.onSubmit} style={{marginTop:'3%'}}>
+    <Form onSubmit={this.onSubmit} style={{marginTop:'1%'}}>
     
     <FormGroup>
     
@@ -103,8 +103,6 @@ export default class Signin extends Component {
     
     <FormGroup>
     
-    <Label ></Label> 
-    
     <Input type="password" name="password" value={this.state.password} onChange={this.onChange} required placeholder="Password" />
     
     </FormGroup>
@@ -114,7 +112,6 @@ export default class Signin extends Component {
     <Label ></Label>
     
      {/* <Input type="text" name="status" value={this.state.status} onChange={this.onChange} required placeholder="Enter a password" />  */}
-    <br />
     <select name="status" value={this.state.value} onChange={this.onChange} style={{width:'100%', height:'40px',borderRadius:'5px'}}>
             <option value="customer">customer</option>
             <option value="homechef">homechef</option> 
@@ -125,23 +122,22 @@ export default class Signin extends Component {
 
     <FormGroup>
     
-    <Label ></Label>
     
-    {/* <a href="/Signup"><p style={{float:'right', color:'#9C9C9B'}}>Signup here</p></a> */}
+    {/* <a href="/Signup"><p style={{float:'right', color:'#9C9C9B'}}>Signup here</p></a>  */}
 
     </FormGroup>
     
-    <div className="d-flex justify-content-center mt-4 login_container">
     
-    <Button type="submit" className="btn btn-login" style={{marginTop:'5%'}}>Login</Button>
     
-    </div>
+    <Button type="submit" className="btn btn-login" style={{marginTop:'0% 0%'}}>Login</Button>
+    
+
     
     </Form>
     
     </div>
 
-    <div className="" style={{width:'55%'}}><img src={log1} alt='login image' style={{ width:'100%', height:'85%' }}/></div>
+    <div style={{width:'55%'}}><img src={log1} alt='login image' style={{ width:'100%', height:'100%', margin:'0% 0%' }}/></div>
 
     </div>
 

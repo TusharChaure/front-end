@@ -14,8 +14,8 @@ class Activeboy extends Component {
 
     componentDidMount() {
         
-        // axios.get('http://localhost:5000/admin/serviceboy/active',{
-        axios.get('admin/serviceboy/active',{
+        axios.get('http://165.22.208.232/admin/serviceboy/active',{
+        // axios.get('admin/serviceboy/active',{
         headers: {
             'auth-token': localStorage.usertoken
           }}

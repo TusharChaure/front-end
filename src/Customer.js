@@ -14,8 +14,8 @@ class Homechef extends Component {
 
     componentDidMount() {
         
-        // axios.get('http://localhost:5000/admin/users/all',{
-        axios.get('admin/users/all',{
+        axios.get('http://165.22.208.232/admin/users/all',{
+        // axios.get('admin/users/all',{
         headers: {
             'auth-token': localStorage.usertoken
           }}

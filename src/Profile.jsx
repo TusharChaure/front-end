@@ -18,8 +18,8 @@ class Profile extends Component {
 
   componentDidMount() {
 
-    // axios.get('http://localhost:5000/homechef/profile', {
-    axios.get('homechef/profile', {
+    axios.get('http://165.22.208.232/homechef/profile', {
+    // axios.get('homechef/profile', {
       headers: {
         'auth-token': localStorage.usertoken
       }})
@@ -48,8 +48,8 @@ class Profile extends Component {
   handle(e) {
     console.log(this.state.status);
     console.log("clicked");
-    // axios.post(`http://localhost:5000/homechef/status/${this.state.status}`,{},
-    axios.post(`homechef/status/${this.state.status}`,{},
+    axios.post(`http://165.22.208.232/homechef/status/${this.state.status}`,{},
+    // axios.post(`homechef/status/${this.state.status}`,{},
           {
               headers: {
                 'auth-token': localStorage.usertoken
@@ -202,7 +202,7 @@ class Profile extends Component {
                   >
                     Edit
                   </button>
-                  <button type="button" className='btn btn-primary' style={{ background:'#779A25', borderColor:'#779A25'}}>Logout</button>
+                  {/* <button type="button" className='btn btn-primary' onClick={this.logOut.bind(this)} style={{ background:'#779A25', borderColor:'#779A25'}}>Logout</button> */}
                   {/* <button type="submit" className="btn btn-dark">
                     Update Profile
                   </button>  */}

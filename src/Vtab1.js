@@ -14,8 +14,8 @@ class Vtab1 extends Component {
 
     componentDidMount() {
         
-        // axios.get('http://localhost:5000/menu/Indian')
-        axios.get('menu/Indian')
+        axios.get('http://165.22.208.232/menu/Indian')
+        // axios.get('menu/Indian')
          .then(res => {
              console.log(res)
              this.setState({items: res.data})

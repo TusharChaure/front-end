@@ -16,8 +16,8 @@ class Account extends Component {
 
     componentDidMount() {
         toast.configure()
-        // axios.get('http://localhost:5000/users/profile', {
-        axios.get('users/profile', {
+        axios.get('http://165.22.208.232/users/profile', {
+        // axios.get('users/profile', {
             headers: {
               'auth-token': localStorage.usertoken
             }})

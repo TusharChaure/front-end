@@ -26,8 +26,8 @@ constructor(props) {
  componentDidMount() {   
         
   toast.configure()
-  // axios.get('http://localhost:5000/homechef/orders/active', {
-  axios.get('homechef/orders/active', {
+  axios.get('http://165.22.208.232/homechef/orders/active', {
+  // axios.get('homechef/orders/active', {
       headers: {
         'auth-token': localStorage.usertoken
       }})
@@ -55,8 +55,8 @@ handle1(e) {
   console.log(this.state.orders._id);
   console.log(localStorage.id0);
   console.log("clicked");
-  // axios.put(`http://localhost:5000/homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
-  axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
+  axios.put(`http://165.22.208.232/homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
+  // axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
         {
             headers: {
               'auth-token': localStorage.usertoken
@@ -84,8 +84,8 @@ handle2(e) {
   console.log(this.state.orders._id);
   console.log(localStorage.id1);
   console.log("clicked");
-  // axios.put(`http://localhost:5000/homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
-  axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
+  axios.put(`http://165.22.208.232/homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
+  // axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
         {
             headers: {
               'auth-token': localStorage.usertoken
@@ -113,8 +113,8 @@ handle3(e) {
   console.log(this.state.orders._id);
   console.log(localStorage.id2);
   console.log("clicked");
-  // axios.put(`http://localhost:5000/homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
-  axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
+  axios.put(`http://165.22.208.232/homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
+  // axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
         {
             headers: {
               'auth-token': localStorage.usertoken
@@ -139,7 +139,7 @@ handle3(e) {
  
  renderTableData() {
     return this.state.orders.map((order, index) => {
-       const { _id, catogary, subcatogary,paymentType,totalCost,serviceboyid } = order //destructuring
+       const { _id, catogary, subcatogary,paymentType,totalCost,discountprice,serviceboyid } = order //destructuring
        if(index==0){      
        return (
 
@@ -154,6 +154,7 @@ handle3(e) {
          <td>{subcatogary}</td>
          <td>{paymentType}</td>
          <td>{totalCost}</td>
+         <td>{discountprice}</td>
          <td>{serviceboyid}</td>
          <td>
          {localStorage.setItem("id0",_id)}
@@ -198,6 +199,7 @@ handle3(e) {
           <td>{subcatogary}</td>
           <td>{paymentType}</td>
           <td>{totalCost}</td>
+          <td>{discountprice}</td>
           <td>{serviceboyid}</td>
           <td>
           {localStorage.setItem("id1",_id)}
@@ -242,6 +244,7 @@ handle3(e) {
             <td>{subcatogary}</td>
             <td>{paymentType}</td>
             <td>{totalCost}</td>
+            <td>{discountprice}</td>
             <td>{serviceboyid}</td>
             <td>
             {localStorage.setItem("id2",_id)}
@@ -279,6 +282,7 @@ handle3(e) {
             <th scope="col">Subcategory</th>
             <th scope="col">Payment Type</th>
             <th scope="col">Total-Amount</th>
+            <th scope="col">Discount-Amount</th>
             <th scope="col">Service Boy Id</th>
             <th scope="col">Status</th>
           </tr>

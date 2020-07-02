@@ -9,8 +9,8 @@ class Vtab3 extends Component {
     };
     
     componentDidMount() {
-        // axios.get('http://localhost:5000/menu/Italian')
-        axios.get('menu/Italian')
+        axios.get('http://165.22.208.232/menu/Italian')
+        // axios.get('menu/Italian')
          .then(res => {
              console.log(res)
              this.setState({items: res.data})

@@ -78,16 +78,16 @@ constructor(props){
 }
 componentDidMount() {
     
-    // axios.get('http://localhost:5000/homechef/profile', {
-    axios.get('homechef/profile', {
+    axios.get('http://165.22.208.232/homechef/profile', {
+    // axios.get('homechef/profile', {
       headers: {
         'auth-token': localStorage.usertoken
       }})
    .then(res => {
        console.log(res)
        if(res.data.status==true){
-        // axios.get('http://localhost:5000/homechef/financial', {
-        axios.get('homechef/financial', {
+        axios.get('http://165.22.208.232/homechef/financial', {
+        // axios.get('homechef/financial', {
             headers: {
                 'auth-token': localStorage.usertoken
             }}).then(res=>{

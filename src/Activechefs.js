@@ -14,8 +14,8 @@ class Activechefs extends Component {
 
     componentDidMount() {
         
-        // axios.get('http://localhost:5000/admin/chefs/active',{
-        axios.get('admin/chefs/active',{
+        axios.get('http://165.22.208.232/admin/chefs/active',{
+        // axios.get('admin/chefs/active',{
         headers: {
             'auth-token': localStorage.usertoken
           }}
