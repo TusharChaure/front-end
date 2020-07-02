@@ -23,7 +23,7 @@ class Coupons extends Component {
   onSubmit(e){
     e.preventDefault()
     console.log("clicked");
-        axios.put('http://165.22.208.232/admin/addcoupon',
+        axios.put('http://165.22.208.232:5000/admin/addcoupon',
          {
             "couponcode": this.state.promo,
             "price": this.state.price,

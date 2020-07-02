@@ -61,7 +61,7 @@ class Cart extends Component {
 
       componentDidMount() {
         console.log(localStorage.amount);
-        axios.post('http://165.22.208.232/users/getcoupons',
+        axios.post('http://165.22.208.232:5000/users/getcoupons',
         // axios.post('users/getcoupons',
         {
             "price": localStorage.amount,
@@ -101,7 +101,7 @@ class Cart extends Component {
 
      handle() {
         console.log("clicked");
-        axios.post('http://165.22.208.232/order/add',
+        axios.post('http://165.22.208.232:5000/order/add',
         // axios.post('order/add',
          {
             "catogary": localStorage.category,

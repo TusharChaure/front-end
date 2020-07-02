@@ -33,7 +33,7 @@ class Addmenu extends Component {
   onSubmit(e){
     e.preventDefault()
     console.log("clicked");
-        axios.put('http://165.22.208.232/homechef/menu/additems',
+        axios.put('http://165.22.208.232:5000/homechef/menu/additems',
         //  axios.put('homechef/menu/additems',
          {
             "catogaryName": this.state.catogaryName,

@@ -23,7 +23,7 @@ constructor(props) {
  componentDidMount() {   
         
   // toast.configure()
-    axios.get('http://165.22.208.232/homechef/orders/past', {
+    axios.get('http://165.22.208.232:5000/homechef/orders/past', {
     // axios.get('homechef/orders/past', {
       headers: {
         'auth-token': localStorage.usertoken

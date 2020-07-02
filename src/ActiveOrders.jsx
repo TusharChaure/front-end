@@ -26,7 +26,7 @@ constructor(props) {
  componentDidMount() {   
         
   toast.configure()
-  axios.get('http://165.22.208.232/homechef/orders/active', {
+  axios.get('http://165.22.208.232:5000/homechef/orders/active', {
   // axios.get('homechef/orders/active', {
       headers: {
         'auth-token': localStorage.usertoken
@@ -55,7 +55,7 @@ handle1(e) {
   console.log(this.state.orders._id);
   console.log(localStorage.id0);
   console.log("clicked");
-  axios.put(`http://165.22.208.232/homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
+  axios.put(`http://165.22.208.232:5000/homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
   // axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id0}`,{},
         {
             headers: {
@@ -84,7 +84,7 @@ handle2(e) {
   console.log(this.state.orders._id);
   console.log(localStorage.id1);
   console.log("clicked");
-  axios.put(`http://165.22.208.232/homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
+  axios.put(`http://165.22.208.232:5000/homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
   // axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id1}`,{},
         {
             headers: {
@@ -113,7 +113,7 @@ handle3(e) {
   console.log(this.state.orders._id);
   console.log(localStorage.id2);
   console.log("clicked");
-  axios.put(`http://165.22.208.232/homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
+  axios.put(`http://165.22.208.232:5000/homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
   // axios.put(`homechef/orderstatus/${this.state.status}/${localStorage.id2}`,{},
         {
             headers: {

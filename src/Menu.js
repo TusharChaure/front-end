@@ -27,7 +27,7 @@ class Menu extends Component {
        
              console.log(this.state.itemId);
              console.log(this.state.price)
-            axios.put('http://165.22.208.232/admin/change/price',
+            axios.put('http://165.22.208.232:5000/admin/change/price',
             //  axios.put('admin/change/price',
              {
                 "itemId": this.state.itemId,
@@ -56,7 +56,7 @@ class Menu extends Component {
 
     componentDidMount() {
         
-        axios.get('http://165.22.208.232/admin/findall',
+        axios.get('http://165.22.208.232:5000/admin/findall',
         // axios.get('admin/findall',
         {
             headers: {

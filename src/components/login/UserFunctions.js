@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 toast.configure()
 export const register = user => {
     return axios
-        .post('http://165.22.208.232/users/register', {
+        .post('http://165.22.208.232:5000/users/register', {
         // .post('users/register', {
             username: user.username,
             phone: user.phone,
@@ -29,7 +29,7 @@ export const register = user => {
 
 export const login = user => {
     return axios
-        .post('http://165.22.208.232/users/login', {
+        .post('http://165.22.208.232:5000/users/login', {
         // .post('users/login', {
             username: user.username,
             password: user.password,

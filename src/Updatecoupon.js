@@ -23,7 +23,7 @@ class Updatecoupon extends Component {
 
   componentDidMount() {
         
-    axios.get('http://165.22.208.232/admin/getcoupons',
+    axios.get('http://165.22.208.232:5000/admin/getcoupons',
     // axios.get('admin/findall',
     {
         headers: {
@@ -39,7 +39,7 @@ class Updatecoupon extends Component {
   onSubmit(e){
     e.preventDefault()
     console.log("clicked");
-        axios.put('http://165.22.208.232/admin/updatecoupon',
+        axios.put('http://165.22.208.232:5000/admin/updatecoupon',
          {
             "couponcode": this.state.promo,
             "price": this.state.price,

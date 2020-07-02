@@ -21,7 +21,7 @@ class Maps extends Component {
 
   handleClick() {
     console.log(localStorage.latitude);
-    axios.post('http://165.22.208.232/users/updatelatlong',
+    axios.post('http://165.22.208.232:5000/users/updatelatlong',
     // axios.post('users/updatelatlong',
           {
             longi: localStorage.longitude,

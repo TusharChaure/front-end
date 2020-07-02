@@ -14,7 +14,7 @@ class Product extends Component {
 
     componentDidMount() {   
         
-        axios.get(`http://165.22.208.232/homechef/order/${localStorage.id2}`, {
+        axios.get(`http://165.22.208.232:5000/homechef/order/${localStorage.id2}`, {
         // axios.get(`homechef/order/${localStorage.id2}`, {
             headers: {
               'auth-token': localStorage.usertoken

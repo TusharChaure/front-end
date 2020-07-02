@@ -12,7 +12,7 @@ function Adminlist4 (props)  {
         console.log('Button click ...');
         console.log(props._id) 
 
-        axios.delete(`http://165.22.208.232/admin/user/delete/${props._id}`, {
+        axios.delete(`http://165.22.208.232:5000/admin/user/delete/${props._id}`, {
         // axios.get(`admin/user/delete/${props._id}`, {
             headers: {
               'auth-token': localStorage.usertoken

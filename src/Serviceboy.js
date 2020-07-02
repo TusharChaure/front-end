@@ -14,7 +14,7 @@ class Serviceboy extends Component {
 
     componentDidMount() {
         
-        axios.get('http://165.22.208.232/admin/serviceboy/all',{
+        axios.get('http://165.22.208.232:5000/admin/serviceboy/all',{
         // axios.get('admin//serviceboy/all',{
         headers: {
             'auth-token': localStorage.usertoken

@@ -18,7 +18,7 @@ class Profile extends Component {
 
   componentDidMount() {
 
-    axios.get('http://165.22.208.232/homechef/profile', {
+    axios.get('http://165.22.208.232:5000/homechef/profile', {
     // axios.get('homechef/profile', {
       headers: {
         'auth-token': localStorage.usertoken
@@ -48,7 +48,7 @@ class Profile extends Component {
   handle(e) {
     console.log(this.state.status);
     console.log("clicked");
-    axios.post(`http://165.22.208.232/homechef/status/${this.state.status}`,{},
+    axios.post(`http://165.22.208.232:5000/homechef/status/${this.state.status}`,{},
     // axios.post(`homechef/status/${this.state.status}`,{},
           {
               headers: {
