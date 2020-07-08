@@ -7,7 +7,6 @@ import Document from './Document'
 import Document2 from './Document2'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-
 function App() {
   return (
     <Router>

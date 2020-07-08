@@ -21,6 +21,7 @@ class Vtab3 extends Component {
     }
     
     render() {
+
         
         const arr = this.state.items.map( (item, index) => {
 	
@@ -28,7 +29,8 @@ class Vtab3 extends Component {
                      itemId={item.products.itemId}
                      catogary={item.products.catogaryName}
                      subcategaryName={item.products.subcatogaryName}
-                     price={item.products.price} 	
+                     price={item.products.price}
+                     src={require(`./pics/italian/ip${index}.jpg`)} 	
                 />
         
         } )

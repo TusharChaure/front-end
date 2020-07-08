@@ -8,6 +8,17 @@ import ReactDOM from 'react-dom';
 import StarRatingComponent from 'react-star-rating-component';
 import demo from './UI/demo.jpg'
 import './Body.css'
+import { Carousel} from 'react-bootstrap'
+import { Jumbotron } from 'react-bootstrap'
+import first from './UI/banners/first.png'
+import off from './UI/banners/off.PNG'
+import delivery from './UI/banners/delivery.PNG'
+import subs from './UI/banners/subs.PNG'
+import tasty from './UI/tasty.png'
+import home from './UI/home.png'
+import background from './UI/back1.PNG'
+import Caro from './Caro'
+import sec from './UI/sec.jpg'
 
 class Body extends React.Component{
 
@@ -259,6 +270,43 @@ class Body extends React.Component{
         </div>
         </div>
 
+        <div id="content" >
+                     <div style={{}}>
+                     <Carousel style={{marginRight:'25%', marginLeft:'25%', marginTop:'3%',marginBottom:'3%', border:'solid'}}>
+                         <Carousel.Item>
+                             <img
+                            className="d-block w-100"
+                            src={first} 
+                            alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={off} 
+                            alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={delivery} 
+                            alt="Third slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={subs} 
+                            alt="Fourth slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+
+
+                    </div>
+                </div>
+
         <div className="" style={{ height:'auto', width:'auto', backgroundColor:'#FFF' }}>
         <div className="" style={{ height:'auto', width:'auto', padding:'0% 0%',paddingBottom:'2%', marginLeft:'4%', marginRight:'4%' }}>
         <h3 style={{paddingTop:'3%', Color:'#9C9C9B'}}>What our client say about us.</h3>
@@ -281,7 +329,6 @@ class Body extends React.Component{
         </div>
         </div>
         </div>
-
         </div>
 
         

@@ -58,7 +58,8 @@ function Arraylis (props)  {
                 "itemid":props.itemId,
                 "quantity":counter,
                 "totalprice":props.price, 
-                "detailsifany":"no"
+                "detailsifany":"no",
+                "src":props.src
         }
         items.push(item);
         localStorage.setItem("items",JSON.stringify(items)) 
@@ -71,6 +72,7 @@ function Arraylis (props)  {
                 "itemid":props.itemId,
                 "quantity":counter,
                 "totalprice":props.price, 
+                "src":props.src,
                 "detailsifany":"no"
         }
         items.push(item);
@@ -122,7 +124,7 @@ function Arraylis (props)  {
 
                 <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
                 <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
-                <img src={mp7} style={{width:'100%', height:'70%'}}/>
+                <img src={props.src} style={{width:'100%', height:'70%'}}/>
                 <p style={{margin:'0%'}}><b>{props.itemId}</b></p>
                 <p style={{margin:'0%'}}>Rs.{props.price}</p>
                 <StarRatingComponent
@@ -147,7 +149,7 @@ function Arraylis (props)  {
                   <div className="re" style={{border:'solid',borderColor:'white', marginTop:'8%'}}>
                       <div className="row" style={{marginLeft:'0.5%', marginTop:'1%',marginRight:'0.5%',marginBottom:'15%'}}>
                         <div className="col-md-6 col-sm-12" style={{ margin:'2% 1%' }}>
-                            <img src={mp7} style={{width:'90%', height:'auto', padding:'1%'}}/>
+                            <img src={props.src} style={{width:'90%', height:'auto', padding:'1%'}}/>
                         </div>
                         <div className="col-md-5 col-sm-10" style={{ margin:'2% 1%' }}>
                             <p style={{ padding:'3%', textAlign:'left'}}><b>{props.itemId}</b></p>

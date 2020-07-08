@@ -9,7 +9,7 @@ class Account extends Component {
     constructor(){
         super();
         this.state = {
-            items: [],
+            items: [],  
         }
     }
 
@@ -113,6 +113,19 @@ class Account extends Component {
                                         id="phonenumber"
                                         placeholder="India"
                                         // placeholder="tdChaure"
+                                        className="form-control"
+                                        style={{backgroundColor:'white'}}
+                                />
+                                </div>
+                                <div className="col-md-10 col-sm-20" style={{color:'green', textAlign:'left', margin:'2% 0'}}>
+                                <p style={{margin:'2% 0'}}>Location:</p>
+                                <input
+                                readOnly
+                                        maxLength="10"
+                                        type="text"
+                                        name="address"
+                                        id="address"
+                                        placeholder={this.state.items.address}
                                         className="form-control"
                                         style={{backgroundColor:'white'}}
                                 />

@@ -4,9 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import mp7 from './pics/indian/mp1.jpg'
 
-
 class Popup extends Component { 
-   
 
      render() {
    

@@ -162,6 +162,7 @@ class Cart extends Component {
                          id={item.itemid}
                          cat={item.quantity}
                          price={item.totalprice} 
+                         src={item.src}
                     />
            
             } )

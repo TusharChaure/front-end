@@ -3,15 +3,6 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 
 class PastOrders extends Component {
-//   state={
-//     isLoading: true,
-//     dataNew:{
-//         username:"Srushti",
-//         address:"pune",
-//         email:"s@gmail.com",
-//         phonenumber:"7896541230",
-//     },
-// };
 
 constructor(props) {
     super(props) //since we are extending class Table so we have to use super in order to override Component class constructor

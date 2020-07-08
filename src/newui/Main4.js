@@ -20,8 +20,16 @@ import Body from '../Body'
 import Footer from '../Footer'
 import Tab2 from '../Tab2'
 import key from '../UI/HomePage/key.png'
-import Jumbotron from 'react-bootstrap/Jumbotron'
 import home from '../UI/home.jpg'
+import { Jumbotron } from 'react-bootstrap'
+import first from '../UI/banners/first.png'
+import off from '../UI/banners/off.PNG'
+import delivery from '../UI/banners/delivery.PNG'
+import subs from '../UI/banners/subs.PNG'
+import tasty from '../UI/tasty.png'
+import background from '../UI/back1.PNG'
+import Caro from '../Caro'
+import sec from '../UI/sec.jpg'
 
 function Main (){
 
@@ -56,11 +64,46 @@ function Main (){
 
                 <img src={key} alt='logo' style={{width:'100%', height:'auto',margin:'0%'}}/>
 
-                <img src={pic1} alt='logo' style={{width:'100%', height:'auto'}}/>  
-                  
+                {/* <div id="content" >
+                     <div style={{}}>
+                     <Carousel style={{marginRight:'25%', marginLeft:'25%', marginTop:'3%',marginBottom:'3%', border:'solid'}}>
+                         <Carousel.Item>
+                             <img
+                            className="d-block w-100"
+                            src={first} 
+                            alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={off} 
+                            alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={delivery} 
+                            alt="Third slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={subs} 
+                            alt="Fourth slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
 
-                <Body />  
-              
+
+                    </div>
+                </div> */}
+
+                <img src={pic1} alt='logo' style={{width:'100%', height:'auto'}}/>  
+                 
+                <Body />
                 </div>
             
         )
