@@ -158,7 +158,7 @@ class Vtab1 extends Component {
             <div>
             <div className="main-footer" style={{ marginTop:'1%', height:'auto', width:'auto' }}>
             <div style={{ height:'auto', width:'auto', backgroundColor:'#FFF' }}>
-                <div className="row" style={{marginTop:'2%', height:'auto', width:'auto', marginLeft:'8%',marginRight:'0%'}}>
+                <div className="row" style={{marginTop:'2%', height:'auto', width:'auto', marginLeft:'6%',marginRight:'6%'}}>
                    {arr} 
                 </div>
             </div>

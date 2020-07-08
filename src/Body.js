@@ -78,11 +78,11 @@ class Body extends React.Component{
         
         <div>
         <div className="" style={{ height:'auto', width:'auto', backgroundColor:'#E7E7E2' }}>
-        <div className="" style={{ height:'auto', width:'auto', padding:'0% 0%',paddingBottom:'2%', marginLeft:'9%' }}>
+        <div className="" style={{ height:'auto', width:'auto', padding:'0% 0%',paddingBottom:'2%' }}>
         <h3 style={{paddingTop:'3%'}}>Featured Product</h3>
-        <div className="row" style={{marginTop:'3%', height:'auto', width:'auto'}}>
+        <div className="row" style={{marginTop:'3%', height:'auto', width:'auto', marginLeft:'5%', marginRight:'5%'}}>
             {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -100,7 +100,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
              {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -118,7 +118,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
             {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -136,7 +136,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
              {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -154,7 +154,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
              {/* Column 1 */}
-             <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+             <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -174,9 +174,9 @@ class Body extends React.Component{
             </div>
 
 
-        <div className="row" style={{marginTop:'3%', height:'auto', width:'auto'}}>
+        <div className="row" style={{marginTop:'3%', height:'auto', width:'auto', marginLeft:'5%', marginRight:'5%'}}>
             {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -194,7 +194,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
              {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -212,7 +212,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
             {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -230,7 +230,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
              {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -248,7 +248,7 @@ class Body extends React.Component{
             </div>
             </div><br/>
              {/* Column 1 */}
-            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'0.5%', marginLeft:'0.5%'}}>
+            <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
             <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
             <img src={mp7} style={{width:'100%', height:'70%'}}/>
             <p style={{margin:'0%'}}><b>Pav Bhaji</b></p>
@@ -270,7 +270,7 @@ class Body extends React.Component{
         </div>
         </div>
 
-        <div id="content" >
+        {/* <div id="content" >
                      <div style={{}}>
                      <Carousel style={{marginRight:'25%', marginLeft:'25%', marginTop:'3%',marginBottom:'3%', border:'solid'}}>
                          <Carousel.Item>
@@ -305,7 +305,7 @@ class Body extends React.Component{
 
 
                     </div>
-                </div>
+                </div> */}
 
         <div className="" style={{ height:'auto', width:'auto', backgroundColor:'#FFF' }}>
         <div className="" style={{ height:'auto', width:'auto', padding:'0% 0%',paddingBottom:'2%', marginLeft:'4%', marginRight:'4%' }}>

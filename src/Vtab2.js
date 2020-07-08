@@ -35,7 +35,7 @@ class Vtab2 extends Component {
         return (
             <div className="main-footer" style={{ marginTop:'3%', height:'auto', width:'auto' }}>
             <div className="container" style={{ height:'auto', width:'auto' }}>
-                <div className="row" style={{marginTop:'3%', height:'auto', width:'auto'}}>
+                <div className="row" style={{marginTop:'3%', height:'auto', width:'auto', marginLeft:'6%',marginRight:'6%'}}>
                     {arr}
                 </div>
             </div>
