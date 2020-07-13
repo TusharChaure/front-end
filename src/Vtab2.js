@@ -28,7 +28,7 @@ class Vtab2 extends Component {
                      catogary={item.products.catogaryName}
                      subcategaryName={item.products.subcatogaryName}
                      price={item.products.price} 
-                     src={require(`./pics/chinese/cp${index}.jpg`)}	
+                     src={require(`./pic/cp${index}.png`)}	
                 />
         
         } )

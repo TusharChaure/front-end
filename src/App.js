@@ -5,6 +5,7 @@ import Main1 from './Main1'
 import Admin from './Admin'
 import Document from './Document'
 import Document2 from './Document2'
+import Main31 from './Main31'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       {/* <Main3 />  */}
       <Route exact path="/" component={Main3} />  
+      <Route exact path="/Main31" component={Main31} />
       <Route exact path="/Main1" component={Main1} /> 
       <Route exact path="/Admin" component={Admin} />
       <Route exact path="/Document" component={Document} /> 

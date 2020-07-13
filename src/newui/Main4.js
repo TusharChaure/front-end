@@ -50,6 +50,42 @@ function Main (){
         return (  
             
             <div>
+                {/* <div id="content" >
+                     <div style={{}}>
+                     <Carousel style={{marginRight:'25%', marginLeft:'25%', marginTop:'3%',marginBottom:'3%', border:'solid'}}>
+                         <Carousel.Item>
+                             <img
+                            className="d-block w-100"
+                            src={first} 
+                            alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={off} 
+                            alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={delivery} 
+                            alt="Third slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={subs} 
+                            alt="Fourth slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+
+
+                    </div>
+                </div> */}
 
                 <Jumbotron style={{textAlign:'left', paddingLeft:'5%', backgroundImage:`url(${home})`,width:'100%', margin:'0%'}}>
                     <h1 style={{color:'white'}}>Tasty homemade Food Now at your Doorstep</h1>

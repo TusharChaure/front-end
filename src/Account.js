@@ -118,7 +118,7 @@ class Account extends Component {
                                 />
                                 </div>
                                 <div className="col-md-10 col-sm-20" style={{color:'green', textAlign:'left', margin:'2% 0'}}>
-                                <p style={{margin:'2% 0'}}>Location:</p>
+                                <p style={{margin:'2% 0'}}>Address:</p>
                                 <input
                                 readOnly
                                         maxLength="10"

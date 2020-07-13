@@ -10,6 +10,7 @@ import StarRatings from 'react-star-ratings';
 import StarRatingComponent from 'react-star-rating-component';
 import Modal from 'react-bootstrap/Modal'
 import Popup from './Popup'
+import p0 from './UI/0.png'
 
 
 const items = []
@@ -124,7 +125,7 @@ function Arraylis (props)  {
 
                 <div className="col-md-2 col-sm-4" style={{ height:'auto',padding:'0.5%', marginRight:'1%', marginLeft:'1%'}}>
                 <div className="item1" style={{backgroundColor:'white', border:'solid', borderWidth:'1px', borderColor:'#9C9C9B'}}>
-                <img src={mp7} style={{width:'100%', height:'70%'}}/>
+                <img src={props.src} style={{width:'100%', height:'70%'}}/>
                 <p style={{margin:'0%'}}><b>{props.itemId}</b></p>
                 <p style={{margin:'0%'}}>Rs.{props.price}</p>
                 <StarRatingComponent

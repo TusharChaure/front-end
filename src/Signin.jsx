@@ -66,8 +66,8 @@ export default class Signin extends Component {
             window.location.reload(1000);
             }
             else if(localStorage.status=="customer"){
-              this.props.history.push("/")
-              // window.location.reload(1000);
+              this.props.history.push("/Main31")
+              window.location.reload(1000);
             }
             else if(localStorage.status=="admin"){
             this.props.history.push("/Admin")

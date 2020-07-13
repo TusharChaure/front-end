@@ -19,6 +19,7 @@ class Account1 extends Component {
         // alert("Logout!!")
         toast("Logout!!", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
         this.props.history.push("/")
+        window.location.reload(1000)
     }
 
     render() {   

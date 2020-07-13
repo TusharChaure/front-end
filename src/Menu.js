@@ -11,6 +11,10 @@ class Menu extends Component {
         super();
         this.state = {
             items: [],
+            items1: [],
+            items2: [],
+            items3: [],
+            items4: [],
             itemId: '',
             price: 0
         }
@@ -54,31 +58,126 @@ class Menu extends Component {
                  })
       }
 
-    componentDidMount() {
+    // componentDidMount() {
         
-        axios.get('http://165.22.208.232:5000/admin/findall',
-        // axios.get('admin/findall',
-        {
-            headers: {
-              'auth-token': localStorage.usertoken
-            }},
-        )
+    //     axios.get('http://165.22.208.232:5000/admin/findall',
+    //     // axios.get('admin/findall',
+    //     {
+    //         headers: {
+    //           'auth-token': localStorage.usertoken
+    //         }},
+    //     )
+    //      .then(res => {
+    //          console.log(res)
+    //          this.setState({items: res.data})
+    //      })
+    // }
+    
+    componentDidMount() {
+        axios.get('http://165.22.208.232:5000/menu/Indian')
+        // axios.get('menu/Indian')
          .then(res => {
              console.log(res)
              this.setState({items: res.data})
          })
+
+         axios.get('http://165.22.208.232:5000/menu/Chinese')
+        // axios.get('menu/Indian')
+         .then(res => {
+             console.log(res)
+             this.setState({items1: res.data})
+         })
+
+         axios.get('http://165.22.208.232:5000/menu/Italian')
+         // axios.get('menu/Indian')
+          .then(res => {
+              console.log(res)
+              this.setState({items2: res.data})
+          })
+
+          axios.get('http://165.22.208.232:5000/menu/Mexican')
+          // axios.get('menu/Indian')
+           .then(res => {
+               console.log(res)
+               this.setState({items3: res.data})
+           })
+
+           axios.get('http://165.22.208.232:5000/menu/Thai')
+           // axios.get('menu/Indian')
+            .then(res => {
+                console.log(res)
+                this.setState({items4: res.data})
+            })
     }
-    
+
+  
+
+
+
+
     render() {
         
         const arr = this.state.items.map( (item, index) => {
 	
             return <Adminlist1 
                      _id={item._id}
-                     itemId={item.itemId}
-                     catogaryName={item.catogaryName}
-                     subcategaryName={item.subcatogaryName}
-                     price={item.price} 	
+                     itemId={item.products.itemId}
+                     catogaryName={item.products.catogaryName}
+                     subcategaryName={item.products.subcatogaryName}
+                     price={item.products.price} 
+                     src={require(`./pic/mp${index}.png`)}	
+                />
+        
+        } )
+
+        const arr1 = this.state.items1.map( (item, index) => {
+	
+            return <Adminlist1 
+                     _id={item._id}
+                     itemId={item.products.itemId}
+                     catogaryName={item.products.catogaryName}
+                     subcategaryName={item.products.subcatogaryName}
+                     price={item.products.price} 
+                     src={require(`./pic/cp${index}.png`)}	
+                />
+        
+        } )
+
+        const arr2 = this.state.items2.map( (item, index) => {
+	
+            return <Adminlist1 
+                     _id={item._id}
+                     itemId={item.products.itemId}
+                     catogaryName={item.products.catogaryName}
+                     subcategaryName={item.products.subcatogaryName}
+                     price={item.products.price} 
+                     src={require(`./pic/ip${index}.png`)}	
+                />
+        
+        } )
+
+        const arr3 = this.state.items3.map( (item, index) => {
+	
+            return <Adminlist1 
+                     _id={item._id}
+                     itemId={item.products.itemId}
+                     catogaryName={item.products.catogaryName}
+                     subcategaryName={item.products.subcatogaryName}
+                     price={item.products.price} 
+                     src={require(`./pic/mxp${index}.png`)}	
+                />
+        
+        } )
+
+        const arr4 = this.state.items4.map( (item, index) => {
+	
+            return <Adminlist1 
+                     _id={item._id}
+                     itemId={item.products.itemId}
+                     catogaryName={item.products.catogaryName}
+                     subcategaryName={item.products.subcatogaryName}
+                     price={item.products.price} 
+                     src={require(`./pic/tp${index}.png`)}	
                 />
         
         } )
@@ -91,6 +190,10 @@ class Menu extends Component {
             <div className="container" style={{ height:'auto', width:'auto' }}>
                 <div className="row" style={{ height:'auto', width:'auto'}}>
                    {arr} 
+                   {arr1}
+                   {arr2}
+                   {arr3}
+                   {arr4}
                 </div> 
             </div>
             </div>

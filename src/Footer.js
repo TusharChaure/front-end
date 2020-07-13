@@ -95,8 +95,8 @@ function Footer() {
             <div className="col-md-3 col-sm-6" style={{textAlign:'left'}}>
             <h4 style={{color:'#FFF'}}>Get in touch</h4>
             <ul className="list-unstyled">
-            <li><Link style={{color:'#FFF'}}><b>Address :</b></Link></li>
-            <li><Link style={{color:'#FFF'}}>InnoBytes Technologies Pvt. Ltd. Row House No. C-101, SwapnaShilp, Five Gardens Soc., Near Jagtap Dairy, Near Balaji Tyres Pune, Maharashtra, 411017 India</Link></li>
+            <li><a href="https://www.google.com/maps/place/InnoBytes+Technologies+Pvt.+Ltd./@18.5959315,73.7846031,15z/data=!4m5!3m4!1s0x0:0xe4d90616b4c3c20d!8m2!3d18.5959315!4d73.7846031" style={{color:'#FFF'}}><b>Address :</b></a></li>
+            <li><a href="https://www.google.com/maps/place/InnoBytes+Technologies+Pvt.+Ltd./@18.5959315,73.7846031,15z/data=!4m5!3m4!1s0x0:0xe4d90616b4c3c20d!8m2!3d18.5959315!4d73.7846031" style={{color:'#FFF'}}>InnoBytes Technologies Pvt. Ltd. Row House No. C-101, SwapnaShilp, Five Gardens Soc., Near Jagtap Dairy, Near Balaji Tyres Pune, Maharashtra, 411017 India</a></li>
             </ul>
             </div>
             {/* Column 2 */}
@@ -104,7 +104,7 @@ function Footer() {
             <h4 style={{color:'#FFF'}}>Contact</h4>
             <p style={{color:'#FFF'}}><b>Phone :</b> +91 8999825013</p>
             <p style={{color:'#FFF'}}><b>Phone :</b> +91 8806087800</p>
-            <p style={{color:'#FFF'}}><b>Email :</b> info@innobytes.in</p>
+            <a href="mailto:info@innobytes.in" style={{color:'#FFF'}}><b>Email :</b> info@innobytes.in</a>
             </div> 
             {/* <div style={{background:'white', height:'25%', borderLeft:'2px white solid', position:'absolute', right:'53%'}}></div> 
             <div style={{background:'white', height:'25%', borderLeft:'2px white solid', position:'absolute', right:'35%'}}></div>  */}
@@ -112,19 +112,19 @@ function Footer() {
              <div className="col-md-3 col-sm-6" style={{textAlign:'left'}}>
             <h4 style={{color:'#FFF'}}>Quick Links</h4>
             <ul className="list-unstyled">
-            <li><a href="./" style={{color:'#FFF'}}>Home</a></li>
-            <li><a href="./" style={{color:'#FFF'}}>Shop By</a></li>
-            <li><a href="./" style={{color:'#FFF'}}>About Us</a></li>
-            <li><a href="./" style={{color:'#FFF'}}>My Orders</a></li>
-            <li><a href="./" style={{color:'#FFF'}}>Contact Us</a></li>
-            <li><a href="./" style={{color:'#FFF'}}>FAQ</a></li>
+            <li><a href="" style={{color:'#FFF'}}>Home</a></li>
+            <li><a href="" style={{color:'#FFF'}}>Shop By</a></li>
+            <li><a href="" style={{color:'#FFF'}}>About Us</a></li>
+            <li><a href="" style={{color:'#FFF'}}>My Orders</a></li>
+            <li><a href="" style={{color:'#FFF'}}>Contact Us</a></li>
+            <li><a href="" style={{color:'#FFF'}}>FAQ</a></li>
             </ul>
             </div>  
             { /* Column 3 */}
             <div className="col-md-3 col-sm-6" style={{textAlign:'left'}}>
             <h4 style={{color:'#FFF', marginBottom:'8%'}}>Yes we are social</h4>
             <ul className="list-unstyled">
-            <FaInstagram size='2rem' className="FaInstagram" />
+            <a style={{color:'pink'}} href="https://www.instagram.com/tushar_chaure_01/" ><FaInstagram size='2rem' className="FaInstagram" /></a>
             <FaWhatsapp size='2rem' style={{marginLeft:'10%'}} className="FaWhatsapp"/>
             <FaFacebookSquare size='2rem' style={{marginLeft:'10%'}} className="FaFacebookSquare"/>
             </ul>

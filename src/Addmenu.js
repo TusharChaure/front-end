@@ -112,21 +112,15 @@ class Addmenu extends Component {
 
               </FormGroup>
 
+             
+              
               {/* <FormGroup>
-    
-              <Label >Description</Label>
-              
-              <Input type="text" name="description" value={this.state.description} onChange={this.onChange} required placeholder="description" />
-              
-              </FormGroup>
-              
-              <FormGroup>
     
               <Label >Price</Label>
               
               <Input type="text" name="price" value={this.state.price} onChange={this.onChange} required placeholder="Item price" />
               
-              </FormGroup> */}
+              </FormGroup>  */}
 
               <div className="d-flex justify-content-center mt-3 login_container">
               

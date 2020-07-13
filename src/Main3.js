@@ -63,7 +63,7 @@ function Main3 (props) {
                         <div>
                         <div>
                         <Nav>
-                        <ul className="navbar-nav mr-auto" style={{marginLeft:'68%'}}>
+                        <ul className="navbar-nav mr-auto" style={{marginLeft:'60%'}}>
                             <li ><Link onClick={() => setShow(true)} className="nav-link text-dark "><GoLocation/></Link></li>
                             <li ><Link to="/Account1" className="nav-link text-dark"><FaRegUser /></Link></li>
                             <li ><Link to="/Cart" className="nav-link text-dark"><FaCartArrowDown /></Link></li>
@@ -78,7 +78,7 @@ function Main3 (props) {
                         <ul className="navbar-nav mr-auto" >
                             <li><Link to="/" className="nav-link text-dark "><b style={{color:'#779A25'}}>Home</b></Link></li>
                             <li ><Link to="/Tab2" className="nav-link text-dark"><b style={{color:'black'}}>Shop by</b></Link></li>
-                            <li><Link to="/Orders" className="nav-link text-dark"><b style={{color:'black'}}>My Orders</b></Link></li>
+                            {/* <li><Link to="/Orders" className="nav-link text-dark"><b style={{color:'black'}}>My Orders</b></Link></li> */}
                             <li><Link to="/" className="nav-link text-dark"><b style={{color:'black'}}>Products</b></Link></li>
                             <li><Link to="/" className="nav-link text-dark"><b style={{color:'black'}}>About Us</b></Link></li>
                             <li><Link to={'/'} className="nav-link text-dark"><b style={{color:'black'}}>Contact Us</b></Link></li>
@@ -110,7 +110,7 @@ function Main3 (props) {
                     <Route path='/Signup' component={Signup} />
                     <Route exact path='/' component={Main4}/>
                     <Route exact path='/Tab2' component={Tab2} />
-                    <Route path='/Orders' component={Orders}/>
+                    {/* <Route path='/Orders' component={Orders}/> */}
                     <Route path='/' />
                     <Route path='/' />
                     <Route path='/Cart' component={Cart} />

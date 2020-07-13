@@ -32,7 +32,7 @@ class Vtab5 extends Component {
                      catogary={item.products.catogaryName}
                      subcategaryName={item.products.subcatogaryName}
                      price={item.products.price} 
-                     src={require(`./pics/thai/tp${index}.jpg`)}
+                     src={require(`./pic/tp${index}.png`)}
                 />
         
         } )

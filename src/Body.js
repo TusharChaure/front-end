@@ -270,42 +270,7 @@ class Body extends React.Component{
         </div>
         </div>
 
-        {/* <div id="content" >
-                     <div style={{}}>
-                     <Carousel style={{marginRight:'25%', marginLeft:'25%', marginTop:'3%',marginBottom:'3%', border:'solid'}}>
-                         <Carousel.Item>
-                             <img
-                            className="d-block w-100"
-                            src={first} 
-                            alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src={off} 
-                            alt="Second slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src={delivery} 
-                            alt="Third slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src={subs} 
-                            alt="Fourth slide"
-                            />
-                        </Carousel.Item>
-                    </Carousel>
-
-
-                    </div>
-                </div> */}
+        
 
         <div className="" style={{ height:'auto', width:'auto', backgroundColor:'#FFF' }}>
         <div className="" style={{ height:'auto', width:'auto', padding:'0% 0%',paddingBottom:'2%', marginLeft:'4%', marginRight:'4%' }}>

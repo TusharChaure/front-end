@@ -77,11 +77,11 @@ export default class Admin extends Component{
                         <div>
                         <div>
                         <Nav>
-                        <ul className="navbar-nav mr-auto" style={{marginLeft:'68%'}}>
+                        <ul className="navbar-nav mr-auto" style={{marginLeft:'75%'}}>
                             <li ><Link className="nav-link text-dark "><GoLocation/></Link></li>
                             <li ><Link to="/Account1" className="nav-link text-dark"><FaRegUser /></Link></li>
                             <li ><Link to="/Cart" className="nav-link text-dark"><FaCartArrowDown /></Link></li>
-                            <li ><Link to="/Signin" className="nav-link text-dark "><GrLogin /></Link></li>
+                            {/* <li ><Link to="/Signin" className="nav-link text-dark "><GrLogin /></Link></li> */}
                             <li ><Link to="/" onClick={this.logOut.bind(this)} className="nav-link text-dark "><FiLogOut /></Link></li>
                         </ul>
                         </Nav>

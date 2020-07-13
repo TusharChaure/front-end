@@ -30,7 +30,7 @@ class Vtab4 extends Component {
                      catogary={item.products.catogaryName}
                      subcategaryName={item.products.subcatogaryName}
                      price={item.products.price} 
-                     src={require(`./pics/mexican/mxp${index}.jpg`)}	
+                     src={require(`./pic/mxp${index}.png`)}	
                 />
         
         } )

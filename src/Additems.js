@@ -52,6 +52,20 @@ class Additems extends Component {
              .catch(err => {
                  console.log(err)
              })
+
+
+             const myFileInputs = document.querySelector("input[type='file']")
+             const formData = new FormData()
+             formData.append('myFile', myFileInputs.files[0])
+
+             fetch('http://localhost:5000/uploadfile', {
+               method: 'POST',
+               body: formData
+             })
+             .then(response => response.json())
+             .then(data => {
+               console.log(data)
+             })
   }
 
   
@@ -105,6 +119,14 @@ class Additems extends Component {
               <Input type="text" name="price" value={this.state.price} onChange={this.onChange} required placeholder="Item price" />
               
               </FormGroup> 
+
+              <FormGroup style={{marginTop:'5%'}}>
+    
+              {/* <Label >Image</Label> */}
+              
+              <Input type="file" />
+              
+              </FormGroup>
 
               <div className="d-flex justify-content-center mt-3 login_container">
               
