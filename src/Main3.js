@@ -33,6 +33,8 @@ import { FiLogOut } from "react-icons/fi";
 import { FaRegRegistered } from 'react-icons/fa'
 import Admin from './Admin'
 import Main1 from './Main1'
+import About from './About'
+import Products from './Products'
 
 function Main3 (props) {
 
@@ -58,7 +60,7 @@ function Main3 (props) {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ borderColor:'grey'}}/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                        <a class="navbar-brand" href="#"><img className="logo" src={logo2} alt='logo' style={{width:'150px', height:'100px' }}/></a>
+                        <a class="navbar-brand" href=""><img className="logo" src={logo2} alt='logo' style={{width:'150px', height:'100px' }}/></a>
                         </Nav>
                         <div>
                         <div>
@@ -79,8 +81,8 @@ function Main3 (props) {
                             <li><Link to="/" className="nav-link text-dark "><b style={{color:'#779A25'}}>Home</b></Link></li>
                             <li ><Link to="/Tab2" className="nav-link text-dark"><b style={{color:'black'}}>Shop by</b></Link></li>
                             {/* <li><Link to="/Orders" className="nav-link text-dark"><b style={{color:'black'}}>My Orders</b></Link></li> */}
-                            <li><Link to="/" className="nav-link text-dark"><b style={{color:'black'}}>Products</b></Link></li>
-                            <li><Link to="/" className="nav-link text-dark"><b style={{color:'black'}}>About Us</b></Link></li>
+                            <li><Link to="/Products" className="nav-link text-dark"><b style={{color:'black'}}>Products</b></Link></li>
+                            <li><Link to="/About" className="nav-link text-dark"><b style={{color:'black'}}>About Us</b></Link></li>
                             <li><Link to={'/'} className="nav-link text-dark"><b style={{color:'black'}}>Contact Us</b></Link></li>
                         </ul>
                         </Nav>
@@ -111,8 +113,8 @@ function Main3 (props) {
                     <Route exact path='/' component={Main4}/>
                     <Route exact path='/Tab2' component={Tab2} />
                     {/* <Route path='/Orders' component={Orders}/> */}
-                    <Route path='/' />
-                    <Route path='/' />
+                    <Route path='/About' component={About} />
+                    <Route path='/Products' component={Products} />
                     <Route path='/Cart' component={Cart} />
                 </Switch> 
                 </Router> 

@@ -93,7 +93,7 @@ function Main (){
                         Home-Chef is a platform which enables patrons to have homemade food from homemakers who want to spread their magic from kitchen. The sheer purpose of this platform is unleash the entrepreneur within women. Patrons have an opportunity to try out various secret recipes across India.
                     </p>
                     <p style={{marginTop:'3%'}}>
-                        <Button variant="primary" style={{backgroundImage:`url(${home})`, borderColor:'white'}}>Shop Now</Button>
+                        <Button variant="primary" href="/Tab2" style={{backgroundImage:`url(${home})`, borderColor:'white'}}>Shop Now</Button>
                     </p>
                 </Jumbotron> 
                 {/* <img src={pic} alt='logo' style={{width:'100%', height:'auto'}}/>   */}

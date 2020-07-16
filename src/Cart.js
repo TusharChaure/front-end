@@ -38,6 +38,7 @@ class Cart extends Component {
    
             console.log(this.state.code)
             localStorage.setItem("promo", this.state.code)
+            if(localStorage.amount == localStorage.total){
             for( let i=0; i<this.state.coupon.length; i++){
                 if(this.state.coupon[i].couponcode == this.state.code){
                     localStorage.amount = localStorage.amount - localStorage.amount*(this.state.coupon[i].off/100)  
@@ -45,8 +46,12 @@ class Cart extends Component {
                     toast("Promo code applied", {position: toast.POSITION.TOP_CENTER, autoClose: 1000})
                 }   
             }
-            this.props.history.push('./')
+            this.props.history.push('./Main31')
             window.location.reload(1000);
+            }
+            else{
+                toast("Promo code already ap[lied!!", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
+            }
      }
 
      handleClick() {

@@ -124,9 +124,9 @@ function Footer() {
             <div className="col-md-3 col-sm-6" style={{textAlign:'left'}}>
             <h4 style={{color:'#FFF', marginBottom:'8%'}}>Yes we are social</h4>
             <ul className="list-unstyled">
-            <a style={{color:'pink'}} href="https://www.instagram.com/tushar_chaure_01/" ><FaInstagram size='2rem' className="FaInstagram" /></a>
-            <FaWhatsapp size='2rem' style={{marginLeft:'10%'}} className="FaWhatsapp"/>
-            <FaFacebookSquare size='2rem' style={{marginLeft:'10%'}} className="FaFacebookSquare"/>
+            <a style={{color:'pink'}} href="https://www.instagram.com/homechefsco/?igshid=ly58xylygs3t" ><FaInstagram size='2rem' className="FaInstagram" /></a>
+            <a style={{color:'pink'}} href="" ><FaWhatsapp size='2rem' style={{marginLeft:'10%'}} className="FaWhatsapp"/></a>
+            <a style={{color:'pink'}} href="https://www.facebook.com/homeschef" ><FaFacebookSquare size='2rem' style={{marginLeft:'10%'}} className="FaFacebookSquare"/></a>
             </ul>
             </div>   
         </div>
