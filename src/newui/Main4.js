@@ -50,8 +50,8 @@ function Main (){
         return (  
             
             <div>
-                {/* <div id="content" >
-                     <div style={{}}>
+                {/* <div id="content">
+                     <div>
                      <Carousel style={{marginRight:'25%', marginLeft:'25%', marginTop:'3%',marginBottom:'3%', border:'solid'}}>
                          <Carousel.Item>
                              <img
@@ -85,18 +85,18 @@ function Main (){
 
 
                     </div>
-                </div> */}
-
+                </div> 
+                */}
+                
                 <Jumbotron style={{textAlign:'left', paddingLeft:'5%', backgroundImage:`url(${home})`,width:'100%', margin:'0%'}}>
                     <h1 style={{color:'white'}}>Tasty homemade Food Now at your Doorstep</h1>
                     <p style={{width:'60%', marginTop:'2%', color:'white'}}>
                         Home-Chef is a platform which enables patrons to have homemade food from homemakers who want to spread their magic from kitchen. The sheer purpose of this platform is unleash the entrepreneur within women. Patrons have an opportunity to try out various secret recipes across India.
                     </p>
                     <p style={{marginTop:'3%'}}>
-                        <Button variant="primary" href="/Tab2" style={{backgroundImage:`url(${home})`, borderColor:'white'}}>Shop Now</Button>
+                        <Button variant="primary" style={{backgroundImage:`url(${home})`, borderColor:'white'}}><Link to="/Tab2" style={{color:'white'}}>Shop Now</Link></Button>
                     </p>
-                </Jumbotron> 
-                {/* <img src={pic} alt='logo' style={{width:'100%', height:'auto'}}/>   */}
+                </Jumbotron>  
 
                 <img src={key} alt='logo' style={{width:'100%', height:'auto',margin:'0%'}}/>
 

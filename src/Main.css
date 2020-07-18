@@ -1,3 +1,7 @@
 .logo:hover{
     box-shadow: 5px 5px rgb(0,0,0);
 }
+
+.log:hover {
+    background: #779A25;
+}

@@ -16,8 +16,13 @@ import p0 from './UI/0.png'
 const items = []
 
 function Arraylis (props)  {
+   
+    // this.state = {
+    //   counter : 1
+    // }
+
+    var [counter, setCount] = useState(1);
     
-    var counter = 1
     let total = 0
         
     toast.configure()
@@ -29,7 +34,7 @@ function Arraylis (props)  {
           console.log(counter);
         //   alert("No of selected items"+ counter)
           toast(counter + " Items selected", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
-     
+          setCount(counter)
       }
     
     function onStarClick(nextValue, prevValue, name) {
@@ -38,10 +43,12 @@ function Arraylis (props)  {
     
     function decrement(){
           counter= counter - 1
+          setCount(counter)
           if(counter<1){
             counter=counter+1
             toast("min quantity is 1", {position: toast.POSITION.TOP_CENTER, autoClose: 1000});
-        }
+            setCount(counter)
+          }
         else{
           console.log(counter);
         //   alert("No of selected items"+ counter)
@@ -158,7 +165,7 @@ function Arraylis (props)  {
                             <p><b>Sub-categary : </b> {props.subcategaryName}</p>
                             <p><b>Description : </b> New Dish</p>
                             <p><b>Price per plate : </b> Rs.{props.price}</p>
-                            <p><b>Quantity : <button className='btn btn-primary' style={{marginLeft:'5%', marginRight:'5%'}} type="button" onClick = {increment}>+</button> {  } <button className='btn btn-primary' type="button" onClick = {decrement}> -- </button></b></p>
+                            <p><b>Quantity : <button className='btn btn-primary' style={{marginLeft:'5%', marginRight:'%'}} type="button" onClick = {increment}>+</button> { counter }   <button className='btn btn-primary' type="button" onClick = {decrement}> -- </button></b></p>
                             <p><button className='btn btn-primary' type="button" onClick={handleClick}  variant="primary" style={{ height:'auto', float:'center', width:'90%'}}>Add To Cart</button></p>
                         </div>
                       </div>

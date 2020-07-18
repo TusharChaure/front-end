@@ -35,6 +35,7 @@ import Admin from './Admin'
 import Main1 from './Main1'
 import About from './About'
 import Products from './Products'
+import { Jumbotron } from 'react-bootstrap'
 
 function Main3 (props) {
 
@@ -78,12 +79,12 @@ function Main3 (props) {
                         <div>
                         <Nav>
                         <ul className="navbar-nav mr-auto" >
-                            <li><Link to="/" className="nav-link text-dark "><b style={{color:'#779A25'}}>Home</b></Link></li>
-                            <li ><Link to="/Tab2" className="nav-link text-dark"><b style={{color:'black'}}>Shop by</b></Link></li>
+                            <li ><Link className="log" to="/" className="nav-link text-dark "><b style={{color:'#779A25'}}>Home</b></Link></li>
+                            <li ><Link className="log" to="/Tab2" className="nav-link text-dark"><b>Shop by</b></Link></li>
                             {/* <li><Link to="/Orders" className="nav-link text-dark"><b style={{color:'black'}}>My Orders</b></Link></li> */}
-                            <li><Link to="/Products" className="nav-link text-dark"><b style={{color:'black'}}>Products</b></Link></li>
-                            <li><Link to="/About" className="nav-link text-dark"><b style={{color:'black'}}>About Us</b></Link></li>
-                            <li><Link to={'/'} className="nav-link text-dark"><b style={{color:'black'}}>Contact Us</b></Link></li>
+                            <li><Link to="/Products" className="nav-link text-dark"><b>Products</b></Link></li>
+                            <li><Link to="/About" className="nav-link text-dark"><b>About Us</b></Link></li>
+                            <li><Link to={'/'} className="nav-link text-dark"><b>Contact Us</b></Link></li>
                         </ul>
                         </Nav>
 

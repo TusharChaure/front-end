@@ -15,6 +15,7 @@ class Products extends Component {
             items2: [],
             items3: [],
             items4: [],
+            search: '',
         }
     }
     
@@ -55,14 +56,22 @@ class Products extends Component {
             })
     }
 
-  
+    UpdateSearch(event) {
+        this.setState({search: event.target.value.substr(0,10)});
+    }
 
 
 
 
     render() {
+
+        let filtered = this.state.items.filter(
+            (item) => {
+                return item.products.itemId.indexOf(this.state.search) !== -1;
+            }
+        );
         
-        const arr = this.state.items.map( (item, index) => {
+        const arr = filtered.map( (item, index) => {
 	
             return <Arraylis 
                      itemId={item.products.itemId}
@@ -134,6 +143,7 @@ class Products extends Component {
             <div className="main-footer" style={{ marginTop:'0%', height:'auto', width:'auto' }}>
             <div className="container" style={{ height:'auto', width:'auto' }}>
                 <div className="row" style={{ height:'auto', width:'auto', marginTop:'5%'}}>
+                    <input type="text" value={this.state.search} onChange={this.UpdateSearch.bind(this)} placeholder="Seach.." style={{width:'30%', height:'5%', borderRadius:'10px', marginLeft:'35%',marginRight:'35%', marginTop:'%',marginBottom:'2%', padding:'1% 1%'}}/>
                    {arr} 
                    {arr1}
                    {arr2}
