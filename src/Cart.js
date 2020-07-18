@@ -23,6 +23,7 @@ class Cart extends Component {
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
         this.handleClick = this.handleClick.bind(this)
+        this.remove = this.remove.bind(this)
     }
      
      onChange(e){
@@ -60,7 +61,13 @@ class Cart extends Component {
         localStorage.removeItem("category")
         localStorage.removeItem("total")
         localStorage.removeItem("amount")
-        this.props.history.push('./')
+        this.props.history.push('./Main31')
+        window.location.reload(1000);
+      }
+
+      remove() {
+        localStorage.amount = localStorage.total;
+        this.props.history.push('./Main31')
         window.location.reload(1000);
       }
 
@@ -278,7 +285,7 @@ class Cart extends Component {
                     </tr>
                     <tr style={{width:'90%'}}>
                     <td style={{width:'30%',textAlign:'left'}}>Promo Code</td>
-                    <td style={{width:'30%',textAlign:'left', color:'green'}}><Form onSubmit={this.onSubmit}><input style={{marginBottom:'3%'}} type="text" name="code" value={this.state.code} onChange={this.onChange} /> <OverlayTrigger trigger="click" placement="left" overlay={popover}><button type="button" className='btn btn-primary' variant="secondary" style={{ marginLeft:'0%',marginBottom:'1%', background:'#779A25', borderColor:'#779A25'}}>Offers</button></OverlayTrigger> <button type="submit" className='btn btn-primary' variant="secondary" style={{ marginLeft:'0%', background:'#779A25', borderColor:'#779A25', marginBottom:'1%'}} onClick={this.handle1}>Apply</button> <button type="button" className='btn btn-primary' variant="secondary" style={{ marginLeft:'0%', background:'#779A25', borderColor:'#779A25'}} onClick={this.handleClick}>Remove</button></Form></td>
+                    <td style={{width:'30%',textAlign:'left', color:'green'}}><Form onSubmit={this.onSubmit}><input style={{marginBottom:'3%'}} type="text" name="code" value={this.state.code} onChange={this.onChange} /> <OverlayTrigger trigger="click" placement="left" overlay={popover}><button type="button" className='btn btn-primary' variant="secondary" style={{ marginLeft:'0%',marginBottom:'1%', background:'#779A25', borderColor:'#779A25'}}>Offers</button></OverlayTrigger> <button type="submit" className='btn btn-primary' variant="secondary" style={{ marginLeft:'0%', background:'#779A25', borderColor:'#779A25', marginBottom:'1%'}} onClick={this.handle1}>Apply</button> <button type="button" className='btn btn-primary' variant="secondary" style={{ marginLeft:'0%', background:'#779A25', borderColor:'#779A25'}} onClick={this.remove}>Remove</button></Form></td>
                     </tr>
                     <tr style={{width:'90%'}}>
                     <td style={{width:'30%',textAlign:'left'}}></td>

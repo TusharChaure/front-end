@@ -32,7 +32,7 @@
     history.push({
         pathname:  "/" 
      })
-    // window.location.reload(1000)
+    window.location.reload(1000)
   }
     
   return(
